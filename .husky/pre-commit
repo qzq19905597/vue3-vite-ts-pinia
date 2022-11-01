@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+# 仅仅检查 ts类型 和eslint代码问题 当出现问题后停止提交、手动执行命令  npm run eslint:fix修复
+npm run tslint && npm run eslint
